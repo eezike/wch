@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,11 @@
 		1400474022BEB0AE00C257A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1400473E22BEB0AE00C257A8 /* Main.storyboard */; };
 		1400474222BEB0AF00C257A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1400474122BEB0AF00C257A8 /* Assets.xcassets */; };
 		1400474522BEB0AF00C257A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1400474322BEB0AF00C257A8 /* LaunchScreen.storyboard */; };
+		140E401E22BED30B00C58883 /* ItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 140E401D22BED30B00C58883 /* ItemViewController.swift */; };
+		140E402022BEDD3F00C58883 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 140E401F22BEDD3F00C58883 /* Podfile */; };
+		140F333422BF94E500794A1F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 140F333322BF94E500794A1F /* GoogleService-Info.plist */; };
+		1411957022BF099100403A0A /* ScanOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1411956F22BF099100403A0A /* ScanOptionsViewController.swift */; };
+		C59D92932E90B5D32AA8C782 /* Pods_WindyCityHacks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3436D67A3A01FBA64466B538 /* Pods_WindyCityHacks.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,13 @@
 		1400474122BEB0AF00C257A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1400474422BEB0AF00C257A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1400474622BEB0AF00C257A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		140E401D22BED30B00C58883 /* ItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemViewController.swift; sourceTree = "<group>"; };
+		140E401F22BEDD3F00C58883 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		140F333322BF94E500794A1F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1411956F22BF099100403A0A /* ScanOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanOptionsViewController.swift; sourceTree = "<group>"; };
+		3436D67A3A01FBA64466B538 /* Pods_WindyCityHacks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WindyCityHacks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		886302C9BA9569AB0E630B02 /* Pods-WindyCityHacks.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindyCityHacks.release.xcconfig"; path = "Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks.release.xcconfig"; sourceTree = "<group>"; };
+		F54F01F8295F579B038A8698 /* Pods-WindyCityHacks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WindyCityHacks.debug.xcconfig"; path = "Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C59D92932E90B5D32AA8C782 /* Pods_WindyCityHacks.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07D9DD2DB9B542C7D33FF481 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3436D67A3A01FBA64466B538 /* Pods_WindyCityHacks.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1400472E22BEB0AE00C257A8 = {
 			isa = PBXGroup;
 			children = (
+				140E401F22BEDD3F00C58883 /* Podfile */,
 				1400473922BEB0AE00C257A8 /* WindyCityHacks */,
 				1400473822BEB0AE00C257A8 /* Products */,
+				7B9E4A9BF807CC8A27D05F19 /* Pods */,
+				07D9DD2DB9B542C7D33FF481 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +81,23 @@
 				1400473A22BEB0AE00C257A8 /* AppDelegate.swift */,
 				1400473C22BEB0AE00C257A8 /* ViewController.swift */,
 				1400473E22BEB0AE00C257A8 /* Main.storyboard */,
+				1411956F22BF099100403A0A /* ScanOptionsViewController.swift */,
+				140E401D22BED30B00C58883 /* ItemViewController.swift */,
 				1400474122BEB0AF00C257A8 /* Assets.xcassets */,
 				1400474322BEB0AF00C257A8 /* LaunchScreen.storyboard */,
 				1400474622BEB0AF00C257A8 /* Info.plist */,
+				140F333322BF94E500794A1F /* GoogleService-Info.plist */,
 			);
 			path = WindyCityHacks;
+			sourceTree = "<group>";
+		};
+		7B9E4A9BF807CC8A27D05F19 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F54F01F8295F579B038A8698 /* Pods-WindyCityHacks.debug.xcconfig */,
+				886302C9BA9569AB0E630B02 /* Pods-WindyCityHacks.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1400474922BEB0AF00C257A8 /* Build configuration list for PBXNativeTarget "WindyCityHacks" */;
 			buildPhases = (
+				E093ED5B9DC72D4BC83418BC /* [CP] Check Pods Manifest.lock */,
 				1400473322BEB0AE00C257A8 /* Sources */,
 				1400473422BEB0AE00C257A8 /* Frameworks */,
 				1400473522BEB0AE00C257A8 /* Resources */,
+				41316F4D5DCAA8AB7234E192 /* [CP] Copy Pods Resources */,
+				58A55B6BF3DFB057B9230E82 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +163,81 @@
 			files = (
 				1400474522BEB0AF00C257A8 /* LaunchScreen.storyboard in Resources */,
 				1400474222BEB0AF00C257A8 /* Assets.xcassets in Resources */,
+				140F333422BF94E500794A1F /* GoogleService-Info.plist in Resources */,
+				140E402022BEDD3F00C58883 /* Podfile in Resources */,
 				1400474022BEB0AE00C257A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		41316F4D5DCAA8AB7234E192 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58A55B6BF3DFB057B9230E82 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WindyCityHacks/Pods-WindyCityHacks-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E093ED5B9DC72D4BC83418BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WindyCityHacks-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1400473322BEB0AE00C257A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1411957022BF099100403A0A /* ScanOptionsViewController.swift in Sources */,
 				1400473D22BEB0AE00C257A8 /* ViewController.swift in Sources */,
+				140E401E22BED30B00C58883 /* ItemViewController.swift in Sources */,
 				1400473B22BEB0AE00C257A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +382,7 @@
 		};
 		1400474A22BEB0AF00C257A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F54F01F8295F579B038A8698 /* Pods-WindyCityHacks.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +401,7 @@
 		};
 		1400474B22BEB0AF00C257A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886302C9BA9569AB0E630B02 /* Pods-WindyCityHacks.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
